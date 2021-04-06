@@ -1,0 +1,549 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --spacing-line: .25rem;
+    --spacing-letter: .15rem;
+    --ff-primary: 'Lato', sans-serif;
+    --ff-secondary: 'Catamaran', sans-serif;
+    --ff-third: 'Dancing Script', cursive;
+    --clr-gold: rgb(148, 121, 48);
+}
+
+/***************************
+          HEADER
+***************************/
+
+.header-container{
+    height: 13vh;
+    background-color: rgb(233, 233, 233);
+    text-align: center;
+}
+
+.header-container h1{
+    text-transform: capitalize;
+    font-weight: 400;
+    color: var(--clr-gold);
+    letter-spacing: var(--spacing-letter);
+    font-size: 4rem;
+    font-family: var(--ff-third);
+}
+
+.header-container h3{
+    font-family: var(--ff-secondary);
+    color: rgb(139, 139, 139);
+    font-size: 1rem;
+}
+
+/***************************
+          NAV
+***************************/
+
+.nav{
+    height: 4vh;
+    background-color:rgb(26, 26, 26);
+    display: flex;
+    justify-content: space-between;
+}
+.nav-collapse-icon{
+    display: none;
+}
+
+.nav-left{
+    padding-left: 1rem;
+    color: white;
+    width: 50%;
+}
+
+.nav-left ul, .nav-right ul{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-left ul a, .nav-right ul a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: rgb(175, 174, 174);
+    padding-right: 1rem;
+}
+
+.nav-right{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1rem;
+    color: rgb(175, 174, 174);
+}
+
+
+/***************************
+          HOME
+***************************/
+
+
+.home-restaurant-img{
+    background: url('images/restaurant-home.jpg') center/cover no-repeat;
+    width: 100%;
+    height: 50vh; 
+}
+
+.locations{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--ff-primary);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #7e2929;
+    width: 100%;
+    height: 25vh;
+}
+
+.location2{
+    padding-top: 3rem;
+}
+
+.pasta-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pasta-img{
+    width: 50%;
+    height: 100%;    
+}
+
+.food-preview{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.pasta-info{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.pasta-info h2{
+    padding-bottom: 1.25rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.pasta-info p{
+    text-align: center;
+    max-width: 650px;
+}
+
+.pasta-wrapper, .dessert-wrapper{
+    background-color: rgb(228, 228, 228);
+}
+
+.dessert-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dessert-img{
+    width: 50%;
+    height: 100%;    
+}
+
+.dessert-info{
+    text-align: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dessert-info h2{
+    padding-bottom: 1.25rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.dessert-info p{
+    text-align: center;
+    max-width: 650px;
+}
+
+
+/***************************
+          OurStory
+***************************/
+
+.our-story-container{
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+    height: 83vh;
+    background: linear-gradient(to left, rgba(112, 0, 0, 0.45), rgba(0,0,0,0.6)), 
+    url('images/our-story.jpg') center/cover no-repeat;
+}
+
+.our-story-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    max-width: 600px;
+    height: 70%;
+    background-color: rgba(20, 20, 20, 0.70);
+    margin-top: 3rem;
+    margin-right: 1.5rem;
+}
+
+.our-story-text h2{
+    text-transform: capitalize;
+    padding: 3rem 0;
+    font-family: var(--ff-third);
+    border-bottom: 2px solid var(--clr-gold);
+    text-align: center;
+    width: 75%;
+    color: rgb(175, 174, 174);
+    font-size: 3rem;
+}
+
+.our-story-text p{
+    font-family: var(--ff-secondary);
+    padding-top: 1.5rem;
+    width: 75%;
+    color: rgb(163, 162, 162);
+    line-height: 1.25rem;    
+}
+
+/***************************
+           Menu
+***************************/
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.menu-container{
+    display: flex;
+    width: 100vw;
+    height: 83vh;
+}
+
+.menu-img{
+    background: url('images/menu.jpg') center/cover no-repeat;
+    width: 50%;
+    height: 100%;
+}
+
+.menu-grid{ 
+    width: 50%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr; 
+    background: linear-gradient(to bottom right, antiquewhite, rgba(0, 0, 0,.5));
+    padding-left: 2rem;
+}
+
+.menu-grid-container-left, .menu-grid-container-right{
+    height: 60%;
+    display: grid;
+    grid-template-columns:1fr;
+}
+
+.food-title{
+    height: 1rem;
+    font-family: var(--ff-secondary);
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: black;
+    font-weight: bold;
+    padding-top: .75rem;
+    padding-bottom: 1rem;
+    text-decoration: underline;
+}
+
+.menu-grid ul{
+    list-style: none;
+    text-transform: capitalize;
+}
+
+.food-item{
+    padding-left: 2rem;
+}
+
+.food-price{
+    padding-right: 6rem;
+}
+
+/***************************
+          Contact
+***************************/
+
+.form-wrapper{
+    background: url('images/contact-img.jpg') center/cover no-repeat;
+    height: 83vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 3rem;
+}
+
+.form{
+    display: flex;
+    width: 31%;
+    height: 70%;
+    margin-left: .725rem;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:rgba(250, 235, 215, .8);
+    min-width: 350px;
+}
+
+.text-input{
+    background: rgb(207, 207, 207);
+    border: none;
+    margin-top: 1rem;
+    border-bottom: 2px solid grey;
+    width: 80%;
+}
+
+#name,
+#phone{
+    height: 2rem;
+}
+
+.date-label,
+.time-label{
+    text-transform:capitalize;
+    color: rgb(78, 78, 78);
+    font-family: var(--ff-secondary);
+}
+
+#date, #time{
+    margin-top: 1rem;
+    background: rgb(207, 207, 207);
+    border: none;
+}
+
+#comment-text{
+    background:rgb(207, 207, 207);
+    border: none;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    width: 80%;
+    border-bottom: 2px solid grey;
+}
+
+.btn-contact{
+    width: 40%;
+    text-transform: capitalize;
+    background-color: #694236;
+    color: antiquewhite;
+    border: none;
+    border-radius: 5px;
+    height: 3.5rem;
+}
+
+.form-p{
+    margin-top: 1rem;
+    width: 80%;
+}
+
+.form-p span{
+    color: rgb(185, 3, 3);
+    font-weight: bold;
+}
+
+/***************************
+          Footer
+***************************/
+
+.footer-wrapper{
+    background-color: rgb(43, 43, 43);
+    color: antiquewhite;
+    display:flex;
+    justify-content: center;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+
+}
+
+.footer-wrapper ul{
+    list-style: none;
+}
+
+.hours,
+.footer-locations,
+.social-media,
+.footer-location1,
+.footer-location2 {
+    padding-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.hours h2,
+.footer-locations h2,
+.social-media h2 {
+    padding: .75rem 0;
+    font-size: 1rem;
+}
+
+.hours{
+    line-height: 1.5rem;
+}
+
+.footer-locations{
+    line-height: 1.25rem;
+}
+
+
+/***************************
+          @ MEDIA's
+***************************/
+
+@media screen and (max-height: 750px){
+    .header-container h1{
+        font-size: 2.5rem; 
+    }
+    .header-container h3{
+        font-size: .75rem;
+    }
+
+}
+
+
+@media screen and (max-width: 700px){
+.nav-right,
+    .nav-left{
+        display: none;
+    }
+
+    .nav{
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-collapse-icon{
+        display: block;
+        color: white;
+        margin-left: 1rem;
+        font-size: 1.25rem;
+    }
+
+}
+
+
+@media screen and (max-width: 850px){
+    .pasta-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dessert-wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .pasta-img,
+    .pasta-info,
+    .dessert-img,
+    .dessert-info{
+        width: 90%;
+        padding-top: 1rem;
+    }
+
+    .dessert-info{
+        padding-bottom: 1rem;
+    }
+    
+    .footer{
+        display: flex;
+    }
+
+    .hours{
+        width: 50%;
+    }
+
+    .footer-locations{
+        width: 50%;
+    }
+
+    .social-media{
+        display: none;
+    }
+
+    .our-story-container{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .our-story-text{   
+        width: 100%;
+        height: 65%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .our-story-text h2{
+        padding: .75rem 0;
+        font-size: 2rem;
+    }
+
+    .our-story-text p{
+        font-size: 1rem;
+    }
+
+    .menu-img{
+        display: none;
+    }
+
+    .menu-grid{
+        width: 100%;
+        padding-top: 3rem;
+    }
+    .food-title{
+        padding-bottom: 2rem;
+    }
+
+    .food-item,
+    .food-price{
+        line-height: 1.5rem;
+    }
+
+    .form{
+        margin-top: 4rem;
+        width: 50%;
+        height: 65%;
+        padding-bottom: 1rem;
+    }
+
+}
+
